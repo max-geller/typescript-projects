@@ -18,6 +18,21 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./analog-clock.component.css"],
 })
 export class AnalogClockComponent implements OnInit {
+  analogueClockConfig = {
+    baseColor: "#ffffff",
+    borderColor: "#000000",
+    borderWidth: 5,
+    centerColor: "#000000",
+    handColors: {
+      hourHand: "#000000",
+      minutHand: "#000000",
+      secondHand: "#000000",
+    },
+    notchColor: "#000000",
+    numbersColor: "#000000",
+    showNumbers: true,
+    size: 300,
+  };
   // Load Markdown and Code files
   info = "assets/projects/analog-clock/info.md";
   overview = "assets/projects/analog-clock/overview.md";
