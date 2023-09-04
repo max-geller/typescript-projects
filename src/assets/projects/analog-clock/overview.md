@@ -1,12 +1,9 @@
 
 ---
 
-# Project Overview
+## Project Overview
 
 Some background on this project. As you can see, it's a basic analog clock.
 
-## Code
+## Code Overview
 
-```
-console.log('hello world')
-```

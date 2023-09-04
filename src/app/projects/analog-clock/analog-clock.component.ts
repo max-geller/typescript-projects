@@ -1,47 +1,32 @@
-// This project includes a basic analog clock written with typescript
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  templateUrl: "./analog-clock.component.html",
-  styles: [
-    `
-      .clock {
-        width: 10rem;
-        height: 10rem;
-        border: 20px solid white;
-        border-radius: 50%;
-        margin: 50px auto;
-      }
+  template: `
+    <markdown clipboard lineNumbers [src]="info"></markdown>
 
-      .code-container {
-        padding: 20px;
-        flex: 1;
-        background-color: #1e1e1e;
-        color: white;
-      }
-    `,
-  ],
+    <div class="clock">
+      <div class="clock-face">
+        <div class="hand hour-hand"></div>
+        <div class="hand min-hand"></div>
+        <div class="hand second-hand"></div>
+      </div>
+    </div>
+
+    <markdown clipboard lineNumbers [src]="overview"></markdown>
+    <markdown clipboard lineNumbers [src]="code"></markdown>
+  `,
+  styleUrls: ["./analog-clock.component.css"],
 })
 export class AnalogClockComponent implements OnInit {
-  markdown = "assets/projects/analog-clock.md";
+  // Load Markdown and Code files
+  info = "assets/projects/analog-clock/info.md";
+  overview = "assets/projects/analog-clock/overview.md";
+  code = "assets/projects/analog-clock/code.ts";
+
+  // App-Specific Variables
   hourHand = document.querySelector(".hour-hand");
   minuteHand = document.querySelector(".minute-hand");
   secondHand = document.querySelector(".second-hand");
-  title = "Analog Clock";
-  code = `constructor() {}
-
-  async setDate() {
-    const now = new Date();
-
-    const seconds = now.getSeconds();
-    const secondsDegrees = (seconds / 60) * 360 + 90;
-
-    const minutes = now.getMinutes();
-    const minutesDegrees = (minutes / 60) * 360 + 90;
-
-    const hours = now.getHours();
-    const hoursDegrees = (hours / 12) * 360 + 90;
-  }`;
 
   constructor() {}
 
@@ -61,6 +46,4 @@ export class AnalogClockComponent implements OnInit {
   ngOnInit() {
     setInterval(this.setDate, 1000);
   }
-
-  // ngOnInit() {
 }

@@ -1,0 +1,6 @@
+.project-contnainer {
+  display: flex;
+ min-width: 500px;
+ min-height: 250px;
+ background-color: rgb(226, 226, 226);
+}

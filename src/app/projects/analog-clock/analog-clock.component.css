@@ -1,0 +1,14 @@
+.clock {
+    width: 10rem;
+    height: 10rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+  }
+
+  .code-container {
+    padding: 20px;
+    flex: 1;
+    background-color: #1e1e1e;
+    color: white;
+  }
