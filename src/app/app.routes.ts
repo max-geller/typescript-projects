@@ -10,6 +10,7 @@ const routes: Routes = [
     redirectTo: "intro",
     pathMatch: "full",
   },
+  { path: 'posts/post/:article', component: IntroComponent }, 
   { path: "intro", component: IntroComponent },
   { path: "analog-clock", component: AnalogClockComponent },
   { path: "**", redirectTo: "intro" },

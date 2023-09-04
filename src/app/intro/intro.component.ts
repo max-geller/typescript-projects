@@ -1,5 +1,5 @@
-import { Component } from "@angular/core";
-import * as readme from "raw-loader!./intro.md";
+import { Component, OnInit } from "@angular/core";
+
 @Component({
   templateUrl: "./intro.component.html",
 })
@@ -21,7 +21,4 @@ export class IntroComponent {
   
   ### Blockquote
   > Blockquote to the max`;
-
-  markdownFile = '`' + readme + '`';
 }
-
