@@ -11,8 +11,18 @@ import {
     <markdown clipboard lineNumbers [src]="info"></markdown>
     <div class="project-container">
       <div class="clock">
+        <div
+          *ngFor="let m of minuteArray; let i = index"
+          class="minute-notch"
+          [style.transform]="'rotate(' + i * 6 + 'deg) translateY(-50%)'"
+        ></div>
+        <div
+          *ngFor="let h of hourArray; let i = index"
+          class="hour-notch"
+          [style.transform]="'rotate(' + i * 30 + 'deg) translateY(-50%)'"
+        ></div>
         <div class="clock-face">
-          <div class=center></div>
+          <div class="center"></div>
           <div class="hand hour-hand" #hourHand></div>
           <div class="hand minute-hand" #minuteHand></div>
           <div class="hand second-hand" #secondHand></div>
@@ -29,6 +39,8 @@ export class AnalogClockComponent implements AfterViewInit {
   @ViewChild("minuteHand", { static: true }) minuteHand!: ElementRef;
   @ViewChild("hourHand", { static: true }) hourHand!: ElementRef;
 
+  minuteArray = Array(60).fill(0); // Creates an array with 60 elements for the minute notches
+  hourArray = Array(12).fill(0); // Creates an array with 12 elements for the hour notches
   // Load Markdown and Code files
   info = "assets/projects/analog-clock/info.md";
   overview = "assets/projects/analog-clock/overview.md";

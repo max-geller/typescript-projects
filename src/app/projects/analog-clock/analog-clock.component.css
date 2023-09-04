@@ -55,3 +55,25 @@
   border-style: solid;
   padding: 2rem;
 }
+
+/* - Add in hour/minute notches 
+.minute-notch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 10px;
+  background: black;
+  transform-origin: center bottom;
+}
+
+.hour-notch {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  width: 4px;
+  height: 20px;
+  background: black;
+  transform-origin: center bottom;
+}
+*/
