@@ -1,0 +1,33 @@
+.app-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.module-container {
+  height: 100%;
+  flex: 1;
+}
+
+.main-container {
+  flex: 1;
+  height: 100%;
+  padding-top: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.drawer-container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.project-information-table {
+  flex: 1;
+  border-width: 1rem;
+  border-style: dashed;
+  border: 1px solid black;
+}
+
+

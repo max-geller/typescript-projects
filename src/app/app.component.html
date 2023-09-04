@@ -1,4 +1,13 @@
-<app-navbar> </app-navbar>
-<div class="main-container">
-  <router-outlet></router-outlet>
+<div class="app-container">
+  <app-navbar> </app-navbar>
+  <mat-drawer-container class="module-container">
+    <mat-drawer mode="side" class="drawer-container" opened>
+      <app-sidenav></app-sidenav>
+    </mat-drawer>
+    <mat-drawer-content>
+      <div class="main-container">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
 </div>
