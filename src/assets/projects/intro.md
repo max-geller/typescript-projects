@@ -1,11 +1,7 @@
+# Overview
 
-# Markdown Test
+  This is a collection of TypeScript projects that I have worked on, wrapped in
+  an Angular application. Each project is a separate component, and can be
+  accessed by clicking on the corresponding link in the navigation bar.
 
-## Here's some more markdown
-
-### And some more
-
-
-```
-console.log('hello world')
-```
+## Projects

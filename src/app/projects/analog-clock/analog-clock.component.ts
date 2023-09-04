@@ -23,6 +23,7 @@ import { Component, OnInit } from "@angular/core";
   ],
 })
 export class AnalogClockComponent implements OnInit {
+  markdown = "assets/projects/analog-clock.md";
   hourHand = document.querySelector(".hour-hand");
   minuteHand = document.querySelector(".minute-hand");
   secondHand = document.querySelector(".second-hand");
