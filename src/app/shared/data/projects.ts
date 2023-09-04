@@ -3,8 +3,10 @@ const PROJECTS_LIST = [
     id: 1,
     name: "Analog Clock",
     link: "/analog-clock",
+    linkActive: true,
     description: "Basic Analog Clock",
     component: "AnalogClockComponent",
+    status: "complete",
     files: [
       {
         code: "assets/projects/analog-clock/code.ts",
@@ -17,8 +19,10 @@ const PROJECTS_LIST = [
     id: 2,
     name: "Kanban Board",
     link: "/kanban-board",
+    linkActive: true,
     description: "Kanban Board",
     component: "KanbanBoardComponent",
+    status: "complete",
     files: [
       {
         code: "assets/projects/kanban-board/code.ts",
@@ -31,8 +35,10 @@ const PROJECTS_LIST = [
     id: 3,
     name: "Pomodoro Clock",
     link: "/pomodoro-clock",
+    linkActive: false,
     description: "Pomodoro Clock",
     component: "PomodoroClockComponent",
+    status: "in-progress",
     files: [
       {
         code: "assets/projects/pomodoro-clock/code.ts",
@@ -45,8 +51,10 @@ const PROJECTS_LIST = [
     id: 4,
     name: "Calculator",
     link: "/calculator",
+    linkActive: false,
     description: "Calculator",
     component: "CalculatorComponent",
+    status: "to-do",
     files: [
       {
         code: "assets/projects/calculator/code.ts",
@@ -59,8 +67,10 @@ const PROJECTS_LIST = [
     id: 5,
     name: "Drum Machine",
     link: "/drum-machine",
+    linkActive: false,
     description: "Drum Machine",
     component: "DrumMachineComponent",
+    status: "to-do",
     files: [
       {
         code: "assets/projects/drum-machine/code.ts",
@@ -73,8 +83,10 @@ const PROJECTS_LIST = [
     id: 6,
     name: "Markdown Previewer",
     link: "/markdown-previewer",
+    linkActive: false,
     description: "Markdown Previewer",
     component: "MarkdownPreviewerComponent",
+    status: "to-do",
     files: [
       {
         code: "assets/projects/markdown-previewer/code.ts",
@@ -87,8 +99,10 @@ const PROJECTS_LIST = [
     id: 7,
     name: "Random Quote Machine",
     link: "/random-quote-machine",
+    linkActive: false,
     description: "Random Quote Machine",
     component: "RandomQuoteMachineComponent",
+    status: "to-do",
     files: [
       {
         code: "assets/projects/random-quote-machine/code.ts",
@@ -101,8 +115,10 @@ const PROJECTS_LIST = [
     id: 8,
     name: "Bar Chart",
     link: "/bar-chart",
+    linkActive: false,
     description: "Bar Chart",
     component: "BarChartComponent",
+    status: "to-do",
     files: [
       {
         code: "assets/projects/bar-chart/code.ts",
@@ -115,8 +131,10 @@ const PROJECTS_LIST = [
     id: 9,
     name: "Scatterplot Graph",
     link: "/scatterplot-graph",
+    linkActive: false,
     description: "Scatterplot Graph",
     component: "ScatterplotGraphComponent",
+    status: "to-do",
     files: [
       {
         code: "assets/projects/scatterplot-graph/code.ts",
@@ -130,8 +148,10 @@ const PROJECTS_LIST = [
     id: 10,
     name: "Heat Map",
     link: "/heat-map",
+    linkActive: false,
     description: "Heat Map",
     component: "HeatMapComponent",
+    status: "to-do",
     files: [
       {
         code: "assets/projects/heat-map/code.ts",
@@ -144,8 +164,10 @@ const PROJECTS_LIST = [
     id: 11,
     name: "Voltage Drop Calculator",
     link: "/voltage-drop-calculator",
+    linkActive: false,
     description: "Voltage Drop Calculator",
     component: "VoltageDropCalculatorComponent",
+    status: "to-do",
     files: [
       {
         code: "assets/projects/voltage-drop-calculator/code.ts",
@@ -158,8 +180,10 @@ const PROJECTS_LIST = [
     id: 12,
     name: "Timeline Viewer",
     link: "/timeline-viewer",
+    linkActive: false,
     description: "Timeline Viewer",
     component: "TimelineViewerComponent",
+    status: "to-do",
     files: [
       {
         code: "assets/projects/timeline-viewer/code.ts",
@@ -172,8 +196,10 @@ const PROJECTS_LIST = [
     id: 13,
     name: "Async Await",
     link: "/async-await",
+    linkActive: false,
     description: "Async Await",
     component: "AsyncAwaitComponent",
+    status: "to-do",
     files: [
       {
         code: "assets/projects/async-await/code.ts",
@@ -186,8 +212,10 @@ const PROJECTS_LIST = [
     id: 14,
     name: "Promise",
     link: "/promise",
+    linkActive: false,
     description: "Promise",
     component: "PromiseComponent",
+    status: "to-do",
     files: [
       {
         code: "assets/projects/promise/code.ts",
@@ -200,8 +228,10 @@ const PROJECTS_LIST = [
     id: 15,
     name: "Lorem Ipsum Generator",
     link: "/lorem-ipsum-generator",
+    linkActive: false,
     description: "Lorem Ipsum Generator",
     component: "LoremIpsumGeneratorComponent",
+    status: "to-do",
     files: [
       {
         code: "assets/projects/lorem-ipsum-generator/code.ts",
@@ -214,8 +244,10 @@ const PROJECTS_LIST = [
     id: 16,
     name: "Password Generator",
     link: "/password-generator",
+    linkActive: false,
     description: "Password Generator",
     component: "PasswordGeneratorComponent",
+    status: "to-do",
     files: [
       {
         code: "assets/projects/password-generator/code.ts",
@@ -228,8 +260,10 @@ const PROJECTS_LIST = [
     id: 17,
     name: "Conduit Size Calculator",
     link: "/conduit-size-calculator",
+    linkActive: false,
     description: "Conduit Size Calculator",
     component: "ConduitSizeCalculatorComponent",
+    status: "to-do",
     files: [
       {
         code: "assets/projects/conduit-size-calculator/code.ts",
@@ -242,8 +276,10 @@ const PROJECTS_LIST = [
     id: 18,
     name: "Conduit Fill Calculator",
     link: "/conduit-fill-calculator",
+    linkActive: false,
     description: "Conduit Fill Calculator",
     component: "ConduitFillCalculatorComponent",
+    status: "to-do",
     files: [
       {
         code: "assets/projects/conduit-fill-calculator/code.ts",
@@ -256,8 +292,10 @@ const PROJECTS_LIST = [
     id: 19,
     name: "Temp Power Service Calculator",
     link: "/temp-power-service-calculator",
+    linkActive: false,
     description: "Temp Power Service Calculator",
     component: "TempPowerServiceCalculatorComponent",
+    status: "to-do",
     files: [
       {
         code: "assets/projects/temp-power-service-calculator/code.ts",

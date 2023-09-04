@@ -4,7 +4,9 @@
   <mat-list-item
     *ngFor="let project of projects"
     mat-button
-    routerLink="/{{ project.link }}"
+    (click)="
+    route(project)"
+    disabled="{{!project.linkActive}}"
   >
     {{ project.id }} - {{ project.name }}
   </mat-list-item>
