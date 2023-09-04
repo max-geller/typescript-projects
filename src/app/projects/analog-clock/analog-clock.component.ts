@@ -1,6 +1,5 @@
 import {
   Component,
-  OnInit,
   AfterViewInit,
   Renderer2,
   ViewChild,
@@ -39,8 +38,9 @@ export class AnalogClockComponent implements AfterViewInit {
   @ViewChild("minuteHand", { static: true }) minuteHand!: ElementRef;
   @ViewChild("hourHand", { static: true }) hourHand!: ElementRef;
 
-  minuteArray = Array(60).fill(0); // Creates an array with 60 elements for the minute notches
-  hourArray = Array(12).fill(0); // Creates an array with 12 elements for the hour notches
+  minuteArray = Array(60).fill(0); 
+  hourArray = Array(12).fill(0); 
+  
   // Load Markdown and Code files
   info = "assets/projects/analog-clock/info.md";
   overview = "assets/projects/analog-clock/overview.md";
