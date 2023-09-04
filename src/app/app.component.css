@@ -3,7 +3,6 @@
   position: relative;
   flex-direction: column;
   height: 100vh;
-
 }
 .module-container {
   display: flex;
@@ -22,7 +21,6 @@
 
 .drawer-container {
   flex: 1;
-  
 }
 
 .project-information-table {
@@ -31,6 +29,3 @@
   border-style: dashed;
   border: 1px solid black;
 }
-
-
-
