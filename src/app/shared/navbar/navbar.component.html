@@ -1,3 +1,8 @@
 <mat-toolbar color="primary">
+  <div style="display: flex"></div>
   <div routerLink="/intro" style="cursor: pointer">TypeScript Projects</div>
+  <span class="spacer" style="flex: 1"></span>
+  <div (click)="openGitInNewTab()" style="cursor: pointer">
+    <fa-icon [icon]="faGitHub"  size="xl"></fa-icon>
+  </div>
 </mat-toolbar>

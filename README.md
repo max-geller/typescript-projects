@@ -14,6 +14,22 @@ This project uses ngx-markdown to render the project markdown files in the brows
 
 This project also uses PrismJS to highlight the code blocks in the markdown files. You can learn more about PrismJS [here](https://prismjs.com/).
 
+## Docker 
+
+This project uses Docker to containerize the application. You can learn more about Docker [here](https://www.docker.com/).
+
+### Build Docker Image
+
+To build the Docker image, run the following command:
+
+    docker build -t typescript-projects .
+
+### Run Docker Container
+
+To run the Docker container, run the following command:
+
+    docker run -d -p 3000:3000 typescript-projects
+
 ## To-Do
 
 - Finish Configuring ngx-markdown

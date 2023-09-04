@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppComponent } from "./app.component";
 import { RouterModule } from "@angular/router";
 import { AppRoutingModule } from "./app.routes";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MaterialModule } from "./shared/material/material.module";
 
 // Import ngx-markdown and PrismJS Libraries:
@@ -52,6 +53,7 @@ import { HttpClientModule } from "@angular/common/http";
       sanitize: SecurityContext.NONE,
       loader: HttpClientModule,
     }),
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
