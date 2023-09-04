@@ -4,6 +4,8 @@ This repository contains a collection of projects that I have built using TypeSc
 
 A working demo has been hosted using Vercel, which can be found [here](https://typescript-projects-sepia.vercel.app/).
 
+![Preview](https://maxgeller.s3.us-west-1.amazonaws.com/analog-clock.png)
+
 ## Dev Log
 
 |  #  |            Project             |
@@ -36,9 +38,6 @@ To run the Docker container, run the following command:
 
     docker run -d -p 3000:3000 typescript-projects
 
-## To-Do
-
-- Finish Configuring ngx-markdown
 
 ## Basic Usage
 
