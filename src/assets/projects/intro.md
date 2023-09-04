@@ -46,7 +46,18 @@ then run:
   ng serve
 ```
 
-### **Docker Compose**
+## Running with Docker
 
-  To run the application in a Docker container, clone the repository and run
-  `docker-compose up`. The application will be available at `localhost:4200`.
+This project uses Docker to containerize the application. You can learn more about Docker [here](https://www.docker.com/).
+
+### Build Docker Image
+
+To build the Docker image, run the following command:
+
+    docker build -t typescript-projects .
+
+### Run Docker Container
+
+To run the Docker container, run the following command:
+
+    docker run -d -p 3000:3000 typescript-projects
