@@ -1,10 +1,16 @@
 # TypeScript Projects
 
-|  #  |            Project             | Live Demo |
-| :-: | :----------------------------: | :-------: |
-| 01  |       [Analog Clock](https://github.com/max-geller/javascript-projects)       | [Live Demo](https://dev.maxgeller.com.com/projects/)  |
-| 02  |     [Google Maps](https://github.com/max-geller/javascript-projects)    | [Live Demo](https://dev.maxgeller.com.com/projects/)  |
-| 03  |    [Kanban Board](https://github.com/max-geller/javascript-projects)     | [Live Demo](https://dev.maxgeller.com.com/projects/)  |
+This repository contains a collection of projects that I have built using TypeScript. Each project is built using the latest version of TypeScript and is compiled to JavaScript using the TypeScript compiler. The projects are showcased in a basic Angular application that is built using Node.js.
+
+A working demo has been hosted using Vercel, which can be found [here](https://typescript-projects-sepia.vercel.app/).
+
+## Dev Log
+
+|  #  |            Project             |
+| :-: | :----------------------------: |
+| 01  |   [Analog Clock](https://github.com/max-geller/javascript-projects)       |
+| 02  |   [Google Maps](https://github.com/max-geller/javascript-projects)        |
+| 03  |   [Kanban Board](https://github.com/max-geller/javascript-projects)       |
 
 ## Overview
 
@@ -14,7 +20,7 @@ This project uses ngx-markdown to render the project markdown files in the brows
 
 This project also uses PrismJS to highlight the code blocks in the markdown files. You can learn more about PrismJS [here](https://prismjs.com/).
 
-## Docker 
+## Docker
 
 This project uses Docker to containerize the application. You can learn more about Docker [here](https://www.docker.com/).
 
