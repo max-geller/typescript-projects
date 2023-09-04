@@ -1,25 +1,11 @@
 <mat-list>
   <mat-list-item mat-button routerLink="/intro">Introduction</mat-list-item>
 
-  <mat-list-item mat-button routerLink="/analog-clock">
-    Project 1: Analog Clock
-  </mat-list-item>
-  <mat-list-item mat-button routerLink="/kanban-board">
-    Project 2: Kanban Board
-  </mat-list-item>
-  <mat-list-item mat-button routerLink="/">
-    Project 3: [Project Name]
-  </mat-list-item>
-  <mat-list-item mat-button routerLink="/">
-    Project 4: [Project Name]
-  </mat-list-item>
-  <mat-list-item mat-button routerLink="/">
-    Project 5: [Project Name]
-  </mat-list-item>
-  <mat-list-item mat-button routerLink="/">
-    Project 6: [Project Name]
-  </mat-list-item>
-  <mat-list-item mat-button routerLink="/">
-    Project 7: [Project Name]
+  <mat-list-item
+    *ngFor="let project of projects"
+    mat-button
+    routerLink="/{{ project.link }}"
+  >
+    {{ project.id }} - {{ project.name }}
   </mat-list-item>
 </mat-list>
