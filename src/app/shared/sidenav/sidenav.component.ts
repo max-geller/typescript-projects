@@ -5,7 +5,7 @@ import { Router } from "@angular/router";
 @Component({
   selector: "app-sidenav",
   templateUrl: "./sidenav.component.html",
-  styles: [],
+  styles: [``],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SidenavComponent {
@@ -14,16 +14,9 @@ export class SidenavComponent {
   // Create a variable called "disableLink" and set it to false unless projects.status = "complete"
   constructor(public router: Router) {}
 
-  route(project: any) 
-
-  
-  {
+  route(project: any) {
     if (project.status === "complete") {
       this.router.navigate([project.link]);
     }
   }
-
-
-
-
 }
