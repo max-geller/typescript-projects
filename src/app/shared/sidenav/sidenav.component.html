@@ -4,10 +4,10 @@
   <mat-list-item
     *ngFor="let project of projects"
     mat-button
-    (click)="
-    route(project)"
-    style="padding-top: 0%;"
-    disabled="{{!project.linkActive}}"
+    class="menu-item"
+    (click)="route(project)"
+    style="padding-top: 0%"
+    disabled="{{ !project.linkActive }}"
   >
     {{ project.id }} - {{ project.name }}
   </mat-list-item>

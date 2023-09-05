@@ -1,6 +1,7 @@
-import { ChangeDetectionStrategy, Component } from "@angular/core";
+import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
 import { PROJECTS_LIST } from "./../data/projects";
 import { Router } from "@angular/router";
+import { MatSidenav } from "@angular/material/sidenav";
 
 @Component({
   selector: "app-sidenav",
@@ -9,14 +10,17 @@ import { Router } from "@angular/router";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SidenavComponent {
-  // Import projects list from projects.ts
+  @Input() sidenav!: MatSidenav;
+
   projects = PROJECTS_LIST;
-  // Create a variable called "disableLink" and set it to false unless projects.status = "complete"
-  constructor(public router: Router) {}
+  constructor(public router: Router, private sidenavMethod: MatSidenav) {}
 
   route(project: any) {
     if (project.status === "complete") {
       this.router.navigate([project.link]);
+      this.sidenavMethod.close();
+
     }
   }
+
 }

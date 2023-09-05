@@ -1,8 +1,8 @@
 <div class="app-container">
   <app-navbar [sidenav]="sidenav"> </app-navbar>
   <mat-sidenav-container class="module-container">
-    <mat-sidenav mode="side" class="drawer-container" #sidenav  opened >
-      <app-sidenav></app-sidenav>
+    <mat-sidenav mode="over" class="drawer-container" #sidenav  opened >
+      <app-sidenav [sidenav]="sidenav"></app-sidenav>
     </mat-sidenav>
     <mat-sidenav-content>
       <div class="main-container">
