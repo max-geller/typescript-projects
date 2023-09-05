@@ -8,11 +8,11 @@ A working demo has been hosted using Vercel, which can be found [here](https://t
 
 ## Dev Log
 
-|  #  |            Project             |
-| :-: | :----------------------------: |
-| 01  |   [Analog Clock](https://github.com/max-geller/javascript-projects)       |
-| 02  |   [Google Maps](https://github.com/max-geller/javascript-projects)        |
-| 03  |   [Kanban Board](https://github.com/max-geller/javascript-projects)       |
+|  #  |            Project Name                 |      Date      |
+| :-: | :-------------------------------------: | :------------: |
+| 01  |   Analog Clock                          | September 2023 |
+| 02  |   Kanban Board                          | September 2023 |
+| 03  |   Giphy Not Found Page                  | September 2023 |
 
 ## Overview
 
