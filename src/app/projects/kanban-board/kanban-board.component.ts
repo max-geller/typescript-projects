@@ -16,21 +16,19 @@ export class KanbanBoardComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    // Get the current route
     const route = this.route.snapshot.url[0].path;
-
-    // Find the project data for the current route
     const projectData = PROJECTS_LIST.find(
       (project) => project.link.slice(1) === route
     );
 
-    // Set the local variables from PROJECTS_LIST
+    // Set the local variables
     if (projectData && 'details' in projectData.files[0]) {
-      console.log('Info: ' + this.info);
-      console.log('Details: ' + this.details);
-      console.log('Component: ' + this.component);
-      console.log('Template: ' + this.template);
-      console.log('Styles: ' + this.styles);
+      this.info = projectData.files[0].info;
+      this.details = projectData.files[0].details;
+      this.component = projectData.files[0].component;
+      this.template = projectData.files[0].template;
+      this.styles = projectData.files[0].styles;
+
     }
   }
 
