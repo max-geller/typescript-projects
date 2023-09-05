@@ -6,7 +6,7 @@ import { ActivatedRoute } from "@angular/router";
   styleUrls: ["./kanban-board.component.css"],
 })
 export class KanbanBoardComponent implements OnInit {
-  // Load Markdown and Code files
+  // Set Project Variables
   info!: string;
   details!: string;
   component!: string;
