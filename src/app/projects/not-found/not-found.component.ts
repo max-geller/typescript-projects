@@ -9,10 +9,10 @@ import { GiphyService } from "src/app/projects/not-found/giphy.service";
 export class NotFoundComponent implements OnInit {
   // Load Markdown and Code files
   info = "assets/projects/not-found/info.md";
-  details = "assets/projects/not-found/overview.md";
-  component = "assets/projects/not-found/code.ts";
-  template = "assets/projects/not-found/html.html";
-  styles = "assets/projects/not-found/css.css";
+  details = "assets/projects/not-found/details.md";
+  component = "assets/projects/not-found/component.ts";
+  template = "assets/projects/not-found/template.html";
+  styles = "assets/projects/not-found/styles.css";
 
   randomGifData: any = [];
   gifUrl: string = "";

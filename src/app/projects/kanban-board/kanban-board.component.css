@@ -32,3 +32,10 @@
   padding: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
+
+
+h3 {
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  padding-top: 1.25rem !important;
+}

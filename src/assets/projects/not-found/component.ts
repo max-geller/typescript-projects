@@ -1,4 +1,3 @@
-
 /* Import Angular Components, HTML, httpClient, and Styles Here */
 
 @Component({
@@ -8,9 +7,6 @@
 })
 export class NotFoundComponent implements OnInit {
   public apiKey = "API_KEY_HERE";
-  info = "assets/projects/not-found/info.md";
-  overview = "assets/projects/not-found/overview.md";
-  serviceCode = "assets/projects/not-found/service.ts";
   randomGifData: any = [];
   gifUrl: string = "";
   constructor() {}

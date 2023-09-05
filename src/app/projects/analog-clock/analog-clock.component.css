@@ -77,3 +77,9 @@
   transform-origin: center bottom;
 }
 */
+
+h3 {
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  padding-top: 1.25rem !important;
+}
