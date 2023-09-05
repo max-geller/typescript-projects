@@ -1,0 +1,9 @@
+<button (click)="addColumn()">Add Column</button>
+
+<div class="kanban-container" style="height: 400px">
+  <div *ngFor="let column of columns" class="kanban-column">
+    {{ column.name }}
+    <button (click)="removeColumn(column.id)">X</button>
+    <!-- Add task cards here -->
+  </div>
+</div>

@@ -29,7 +29,7 @@ const PROJECTS_LIST = [
       {
         info: "assets/projects/kanban-board/info.md",
         details: "assets/projects/kanban-board/details.md",
-        component: "assets/projects/kanban-board/code.ts",
+        component: "assets/projects/kanban-board/component.ts",
         template: "assets/projects/kanban-board/template.html",
         styles: "assets/projects/kanban-board/styles.css",
       },

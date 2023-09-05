@@ -1,16 +1,38 @@
-import { Component } from "@angular/core";
-
+import { Component, OnInit } from "@angular/core";
+import { PROJECTS_LIST } from "./../../data/projects.data";
+import { ActivatedRoute } from "@angular/router";
 @Component({
   templateUrl: "./kanban-board.component.html",
   styleUrls: ["./kanban-board.component.css"],
 })
-export class KanbanBoardComponent {
+export class KanbanBoardComponent implements OnInit {
   // Load Markdown and Code files
-  info = "assets/projects/kanban-board/info.md";
-  details = "assets/projects/kanban-board/details.md";
-  component = "assets/projects/kanban-board/component.ts";
-  template = "assets/projects/kanban-board/template.html";
-  styles = "assets/projects/kanban-board/style.css";
+  info!: string;
+  details!: string;
+  component!: string;
+  template!: string;
+  styles!: string;
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    // Get the current route
+    const route = this.route.snapshot.url[0].path;
+
+    // Find the project data for the current route
+    const projectData = PROJECTS_LIST.find(
+      (project) => project.link.slice(1) === route
+    );
+
+    // Set the local variables from PROJECTS_LIST
+    if (projectData && 'details' in projectData.files[0]) {
+      console.log('Info: ' + this.info);
+      console.log('Details: ' + this.details);
+      console.log('Component: ' + this.component);
+      console.log('Template: ' + this.template);
+      console.log('Styles: ' + this.styles);
+    }
+  }
 
   // Create Initial Kanban Columns
   columns = [
