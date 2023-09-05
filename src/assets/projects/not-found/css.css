@@ -1,0 +1,15 @@
+.background-image {
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* This will make the div take the full height of the viewport */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay-text {
+    color: white; /* Change this to the color you want for the text */
+    text-align: center;
+    z-index: 1;
+  }

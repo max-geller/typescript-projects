@@ -9,6 +9,7 @@ import { WeatherWidgetComponent } from "./projects/weather-widget/weather-widget
 import { ImageGalleryComponent } from "./projects/image-gallery/image-gallery.component";
 import { TicTacToeComponent } from "./projects/tic-tac-toe/tic-tac-toe.component";
 import { VoltageDropComponent } from "./projects/voltage-drop/voltage-drop.component";
+import { NotFoundComponent } from "./projects/not-found/not-found.component";
 
 const routes: Routes = [
   {
@@ -19,12 +20,17 @@ const routes: Routes = [
   { path: "intro", component: IntroComponent },
   { path: "analog-clock", component: AnalogClockComponent },
   { path: "kanban-board", component: KanbanBoardComponent },
+  { path: "not-found", component: NotFoundComponent },
   { path: "weather-widget", component: WeatherWidgetComponent },
   { path: "image-gallery", component: ImageGalleryComponent },
   { path: "tic-tac-toe", component: TicTacToeComponent },
   { path: "voltage-drop", component: VoltageDropComponent },
   { path: "pomodoro-clock", redirectTo: "intro" },
-  { path: "**", redirectTo: "intro" },
+  {
+    path: "**",
+    redirectTo: "/not-found",
+    pathMatch: "full",
+  },
 ];
 
 @NgModule({

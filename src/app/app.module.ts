@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppComponent } from "./app.component";
 import { RouterModule } from "@angular/router";
 import { AppRoutingModule } from "./app.routes";
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { MaterialModule } from "./shared/material/material.module";
 
 // Import ngx-markdown and PrismJS Libraries:
@@ -28,6 +28,7 @@ import { KanbanBoardComponent } from "./projects/kanban-board/kanban-board.compo
 import { ImageGalleryComponent } from "./projects/image-gallery/image-gallery.component";
 import { WeatherWidgetComponent } from "./projects/weather-widget/weather-widget.component";
 import { HttpClientModule } from "@angular/common/http";
+import { NotFoundComponent } from "./projects/not-found/not-found.component";
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { HttpClientModule } from "@angular/common/http";
     ImageGalleryComponent,
     WeatherWidgetComponent,
     SidenavComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +55,7 @@ import { HttpClientModule } from "@angular/common/http";
       sanitize: SecurityContext.NONE,
       loader: HttpClientModule,
     }),
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
