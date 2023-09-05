@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
-import { PROJECTS_LIST } from "./../data/projects";
+import { PROJECTS_LIST } from "../../data/projects";
 import { Router } from "@angular/router";
 import { MatSidenav } from "@angular/material/sidenav";
 

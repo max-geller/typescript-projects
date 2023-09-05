@@ -6,50 +6,27 @@ import {
   ElementRef,
 } from "@angular/core";
 @Component({
-  template: `
-    <markdown clipboard lineNumbers [src]="info"></markdown>
-    <div class="project-container">
-      <div class="clock">
-        <div
-          *ngFor="let m of minuteArray; let i = index"
-          class="minute-notch"
-          [style.transform]="'rotate(' + i * 6 + 'deg) translateY(-50%)'"
-        ></div>
-        <div
-          *ngFor="let h of hourArray; let i = index"
-          class="hour-notch"
-          [style.transform]="'rotate(' + i * 30 + 'deg) translateY(-50%)'"
-        ></div>
-        <div class="clock-face">
-          <div class="center"></div>
-          <div class="hand hour-hand" #hourHand></div>
-          <div class="hand minute-hand" #minuteHand></div>
-          <div class="hand second-hand" #secondHand></div>
-        </div>
-      </div>
-    </div>
-    <markdown clipboard lineNumbers [src]="overview"></markdown>
-    <markdown clipboard lineNumbers [src]="code"></markdown>
-  `,
+  templateUrl: "./analog-clock.component.html",
   styleUrls: ["./analog-clock.component.css"],
 })
 export class AnalogClockComponent implements AfterViewInit {
+  // Load Markdown and Code files
+  info = "assets/projects/analog-clock/info.md";
+  details = "assets/projects/analog-clock/details.md";
+  component = "assets/projects/analog-clock/component.ts";
+  template = "assets/projects/analog-clock/template.html";
+  styles = "assets/projects/analog-clock/style.css";
+
   @ViewChild("secondHand", { static: true }) secondHand!: ElementRef;
   @ViewChild("minuteHand", { static: true }) minuteHand!: ElementRef;
   @ViewChild("hourHand", { static: true }) hourHand!: ElementRef;
 
-  minuteArray = Array(60).fill(0); 
-  hourArray = Array(12).fill(0); 
-  
-  // Load Markdown and Code files
-  info = "assets/projects/analog-clock/info.md";
-  overview = "assets/projects/analog-clock/overview.md";
-  code = "assets/projects/analog-clock/code.ts";
+  minuteArray = Array(60).fill(0);
+  hourArray = Array(12).fill(0);
 
   constructor(private renderer: Renderer2) {}
   setTime() {
     const now = new Date();
-
     const seconds = now.getSeconds();
     const secondsDegrees = (seconds / 60) * 360 + 90;
     this.renderer.setStyle(

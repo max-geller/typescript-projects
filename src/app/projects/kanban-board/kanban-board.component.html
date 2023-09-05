@@ -1,0 +1,14 @@
+<markdown clipboard lineNumbers [src]="info"></markdown>
+<button (click)="addColumn()">Add Column</button>
+
+<div class="kanban-container" style="height: 400px">
+  <div *ngFor="let column of columns" class="kanban-column">
+    {{ column.name }}
+    <button (click)="removeColumn(column.id)">X</button>
+    <!-- Add task cards here -->
+  </div>
+</div>
+<markdown clipboard lineNumbers [src]="details"></markdown>
+<markdown clipboard lineNumbers [src]="component"></markdown>
+<markdown clipboard lineNumbers [src]="template"></markdown>
+<markdown clipboard lineNumbers [src]="styles"></markdown>

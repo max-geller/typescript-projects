@@ -1,17 +1,12 @@
-import { Component } from "@angular/core";
+/* Import Angular Components, HTML, Styles Here */
+
 
 @Component({
-  templateUrl: "./kanban-board.component.html",
+  template: ``,
+
   styleUrls: ["./kanban-board.component.css"],
 })
 export class KanbanBoardComponent {
-  // Load Markdown and Code files
-  info = "assets/projects/kanban-board/info.md";
-  details = "assets/projects/kanban-board/details.md";
-  component = "assets/projects/kanban-board/component.ts";
-  template = "assets/projects/kanban-board/template.html";
-  styles = "assets/projects/kanban-board/style.css";
-
   // Create Initial Kanban Columns
   columns = [
     { id: 1, name: "Pending" },

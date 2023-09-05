@@ -9,9 +9,11 @@ const PROJECTS_LIST = [
     status: "complete",
     files: [
       {
-        code: "assets/projects/analog-clock/code.ts",
-        overview: "assets/projects/analog-clock/overview.md",
         info: "assets/projects/analog-clock/info.md",
+        details: "assets/projects/analog-clock/details.md",
+        component: "assets/projects/analog-clock/component.ts",
+        template: "assets/projects/analog-clock/template.html",
+        styles: "assets/projects/analog-clock/styles.css",
       },
     ],
   },
@@ -25,9 +27,11 @@ const PROJECTS_LIST = [
     status: "complete",
     files: [
       {
-        code: "assets/projects/kanban-board/code.ts",
-        overview: "assets/projects/kanban-board/overview.md",
         info: "assets/projects/kanban-board/info.md",
+        details: "assets/projects/kanban-board/details.md",
+        component: "assets/projects/kanban-board/code.ts",
+        template: "assets/projects/kanban-board/template.html",
+        styles: "assets/projects/kanban-board/styles.css",
       },
     ],
   },
@@ -41,9 +45,12 @@ const PROJECTS_LIST = [
     status: "complete",
     files: [
       {
-        code: "assets/projects/not-found/code.ts",
-        overview: "assets/projects/not-found/overview.md",
         info: "assets/projects/not-found/info.md",
+        details: "assets/projects/not-found/details.md",
+        component: "assets/projects/not-found/component.ts",
+        template: "assets/projects/not-found/template.html",
+        styles: "assets/projects/not-found/styles.css",
+
       },
     ],
   },
@@ -304,7 +311,7 @@ const PROJECTS_LIST = [
       },
     ],
   },
-    {
+  {
     id: 20,
     name: "Image Gallery",
     link: "/image-gallery",

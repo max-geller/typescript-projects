@@ -1,7 +1,7 @@
 import { RouterModule, Routes } from "@angular/router";
 import { NgModule } from "@angular/core";
 
-import { PROJECTS_LIST } from "./shared/data/projects";
+import { PROJECTS_LIST } from "./data/projects";
 import { IntroComponent } from "./intro/intro.component";
 import { AnalogClockComponent } from "./projects/analog-clock/analog-clock.component";
 import { KanbanBoardComponent } from "./projects/kanban-board/kanban-board.component";
