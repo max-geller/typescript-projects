@@ -38,7 +38,6 @@ To run the Docker container, run the following command:
 
     docker run -d -p 3000:3000 typescript-projects
 
-
 ## Basic Usage
 
 Install Node Modules:

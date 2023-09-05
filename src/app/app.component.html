@@ -1,13 +1,13 @@
 <div class="app-container">
-  <app-navbar> </app-navbar>
-  <mat-drawer-container class="module-container">
-    <mat-drawer mode="side" class="drawer-container" opened>
+  <app-navbar [sidenav]="sidenav"> </app-navbar>
+  <mat-sidenav-container class="module-container">
+    <mat-sidenav mode="side" class="drawer-container" #sidenav  opened >
       <app-sidenav></app-sidenav>
-    </mat-drawer>
-    <mat-drawer-content>
+    </mat-sidenav>
+    <mat-sidenav-content>
       <div class="main-container">
         <router-outlet></router-outlet>
       </div>
-    </mat-drawer-content>
-  </mat-drawer-container>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </div>
