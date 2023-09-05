@@ -1,6 +1,34 @@
-.project-contnainer {
+.kanban-container {
   display: flex;
- min-width: 500px;
- min-height: 250px;
- background-color: rgb(226, 226, 226);
+  min-height: 250px;
+  background-color: rgb(240, 240, 240);
+  flex-wrap: nowrap; /* keep columns in a row */
+  align-content: flex-start;
+  height: 400px;
+  overflow-x: auto; /* enable horizontal scrolling */
+}
+.kanban-column {
+  background-color: #fff;
+  min-width: 250px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  align-self: stretch;
+  overflow-x: auto; /* enable horizontal scrolling */
+}
+
+@media (min-width: 600px) {
+  /* apply these styles on devices with viewport width of 600px or larger */
+  .kanban-column {
+    flex: 0 0 auto; /* allow the column to shrink and grow */
+    width: 250px; /* set the maximum width */
+    padding: 20px;
+  }
+}
+
+.task-card {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
