@@ -1,0 +1,20 @@
+<div class="project-container">
+  <div class="clock">
+    <div
+      *ngFor="let m of minuteArray; let i = index"
+      class="minute-notch"
+      [style.transform]="'rotate(' + i * 6 + 'deg) translateY(-50%)'"
+    ></div>
+    <div
+      *ngFor="let h of hourArray; let i = index"
+      class="hour-notch"
+      [style.transform]="'rotate(' + i * 30 + 'deg) translateY(-50%)'"
+    ></div>
+    <div class="clock-face">
+      <div class="center"></div>
+      <div class="hand hour-hand" #hourHand></div>
+      <div class="hand minute-hand" #minuteHand></div>
+      <div class="hand second-hand" #secondHand></div>
+    </div>
+  </div>
+</div>

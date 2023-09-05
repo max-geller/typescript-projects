@@ -50,26 +50,29 @@ const PROJECTS_LIST = [
         component: "assets/projects/not-found/component.ts",
         template: "assets/projects/not-found/template.html",
         styles: "assets/projects/not-found/styles.css",
-
       },
     ],
   },
   {
     id: 4,
-    name: "Calculator",
-    link: "/calculator",
-    linkActive: false,
-    description: "Calculator",
-    component: "CalculatorComponent",
-    status: "to-do",
+    name: "Pomodoro Clock",
+    link: "/pomodoro",
+    linkActive: true,
+    description: "Pomodoro Clock",
+    component: "PomodoroClockComponent",
+    status: "complete",
     files: [
       {
-        code: "assets/projects/calculator/code.ts",
-        overview: "assets/projects/calculator/overview.md",
-        info: "assets/projects/calculator/info.md",
+        info: "assets/projects/pomodoro/info.md",
+        component: "assets/projects/pomodoro/component.ts",
+        details: "assets/projects/pomodoro/details.md",
+        template: "assets/projects/pomodoro/template.html",
+        styles: "assets/projects/pomodoro/styles.css",
       },
     ],
   },
+  /*
+
   {
     id: 5,
     name: "Drum Machine",
@@ -80,8 +83,8 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/drum-machine/code.ts",
-        overview: "assets/projects/drum-machine/overview.md",
+        component: "assets/projects/drum-machine/component.ts",
+        details: "assets/projects/drum-machine/details.md",
         info: "assets/projects/drum-machine/info.md",
       },
     ],
@@ -96,8 +99,8 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/markdown-previewer/code.ts",
-        overview: "assets/projects/markdown-previewer/overview.md",
+        component: "assets/projects/markdown-previewer/component.ts",
+        details: "assets/projects/markdown-previewer/details.md",
         info: "assets/projects/markdown-previewer/info.md",
       },
     ],
@@ -112,8 +115,8 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/random-quote-machine/code.ts",
-        overview: "assets/projects/random-quote-machine/overview.md",
+        component: "assets/projects/random-quote-machine/component.ts",
+        details: "assets/projects/random-quote-machine/details.md",
         info: "assets/projects/random-quote-machine/info.md",
       },
     ],
@@ -128,8 +131,8 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/bar-chart/code.ts",
-        overview: "assets/projects/bar-chart/overview.md",
+        component: "assets/projects/bar-chart/component.ts",
+        details: "assets/projects/bar-chart/details.md",
         info: "assets/projects/bar-chart/info.md",
       },
     ],
@@ -144,9 +147,9 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/scatterplot-graph/code.ts",
+        component: "assets/projects/scatterplot-graph/component.ts",
 
-        overview: "assets/projects/scatterplot-graph/overview.md",
+        details: "assets/projects/scatterplot-graph/details.md",
         info: "assets/projects/scatterplot-graph/info.md",
       },
     ],
@@ -161,8 +164,8 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/heat-map/code.ts",
-        overview: "assets/projects/heat-map/overview.md",
+        component: "assets/projects/heat-map/component.ts",
+        details: "assets/projects/heat-map/details.md",
         info: "assets/projects/heat-map/info.md",
       },
     ],
@@ -177,8 +180,8 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/voltage-drop/code.ts",
-        overview: "assets/projects/voltage-drop/overview.md",
+        component: "assets/projects/voltage-drop/component.ts",
+        details: "assets/projects/voltage-drop/details.md",
         info: "assets/projects/voltage-drop/info.md",
       },
     ],
@@ -193,8 +196,8 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/timeline-viewer/code.ts",
-        overview: "assets/projects/timeline-viewer/overview.md",
+        component: "assets/projects/timeline-viewer/component.ts",
+        details: "assets/projects/timeline-viewer/details.md",
         info: "assets/projects/timeline-viewer/info.md",
       },
     ],
@@ -209,8 +212,8 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/async-await/code.ts",
-        overview: "assets/projects/async-await/overview.md",
+        component: "assets/projects/async-await/component.ts",
+        details: "assets/projects/async-await/details.md",
         info: "assets/projects/async-await/info.md",
       },
     ],
@@ -225,8 +228,8 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/promise/code.ts",
-        overview: "assets/projects/promise/overview.md",
+        component: "assets/projects/promise/component.ts",
+        details: "assets/projects/promise/details.md",
         info: "assets/projects/promise/info.md",
       },
     ],
@@ -241,8 +244,8 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/lorem-ipsum-generator/code.ts",
-        overview: "assets/projects/lorem-ipsum-generator/overview.md",
+        component: "assets/projects/lorem-ipsum-generator/component.ts",
+        details: "assets/projects/lorem-ipsum-generator/details.md",
         info: "assets/projects/lorem-ipsum-generator/info.md",
       },
     ],
@@ -257,8 +260,8 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/password-generator/code.ts",
-        overview: "assets/projects/password-generator/overview.md",
+        component: "assets/projects/password-generator/component.ts",
+        details: "assets/projects/password-generator/details.md",
         info: "assets/projects/password-generator/info.md",
       },
     ],
@@ -273,8 +276,8 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/conduit-size-calculator/code.ts",
-        overview: "assets/projects/conduit-size-calculator/overview.md",
+        component: "assets/projects/conduit-size-calculator/component.ts",
+        details: "assets/projects/conduit-size-calculator/details.md",
         info: "assets/projects/conduit-size-calculator/info.md",
       },
     ],
@@ -289,8 +292,8 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/conduit-fill-calculator/code.ts",
-        overview: "assets/projects/conduit-fill-calculator/overview.md",
+        component: "assets/projects/conduit-fill-calculator/component.ts",
+        details: "assets/projects/conduit-fill-calculator/details.md",
         info: "assets/projects/conduit-fill-calculator/info.md",
       },
     ],
@@ -305,8 +308,8 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/temp-power-service-calculator/code.ts",
-        overview: "assets/projects/temp-power-service-calculator/overview.md",
+        component: "assets/projects/temp-power-service-calculator/component.ts",
+        details: "assets/projects/temp-power-service-calculator/details.md",
         info: "assets/projects/temp-power-service-calculator/info.md",
       },
     ],
@@ -321,8 +324,8 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/image-gallery/code.ts",
-        overview: "assets/projects/image-gallery/overview.md",
+        component: "assets/projects/image-gallery/component.ts",
+        details: "assets/projects/image-gallery/details.md",
         info: "assets/projects/image-gallery/info.md",
       },
     ],
@@ -337,8 +340,8 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/tic-tac-toe/code.ts",
-        overview: "assets/projects/tic-tac-toe/overview.md",
+        component: "assets/projects/tic-tac-toe/component.ts",
+        details: "assets/projects/tic-tac-toe/details.md",
         info: "assets/projects/tic-tac-toe/info.md",
       },
     ],
@@ -353,28 +356,29 @@ const PROJECTS_LIST = [
     status: "to-do",
     files: [
       {
-        code: "assets/projects/weather-widget/code.ts",
-        overview: "assets/projects/weather-widget/overview.md",
+        component: "assets/projects/weather-widget/component.ts",
+        details: "assets/projects/weather-widget/details.md",
         info: "assets/projects/weather-widget/info.md",
       },
     ],
   },
   {
     id: 23,
-    name: "Pomodoro Clock",
-    link: "/pomodoro-clock",
+    name: "Calculator",
+    link: "/calculator",
     linkActive: false,
-    description: "Pomodoro Clock",
-    component: "PomodoroClockComponent",
-    status: "in-progress",
+    description: "Calculator",
+    component: "CalculatorComponent",
+    status: "to-do",
     files: [
       {
-        code: "assets/projects/pomodoro-clock/code.ts",
-        overview: "assets/projects/pomodoro-clock/overview.md",
-        info: "assets/projects/pomodoro-clock/info.md",
+        component: "assets/projects/calculator/component.ts",
+        details: "assets/projects/calculator/details.md",
+        info: "assets/projects/calculator/info.md",
       },
     ],
   },
+  */
 ];
 
 export { PROJECTS_LIST };

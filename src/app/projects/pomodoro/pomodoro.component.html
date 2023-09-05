@@ -1,0 +1,67 @@
+<markdown clipboard lineNumbers [src]="info"></markdown>
+<div class="project-container">
+  <div class="timer-display">
+    <div class="timer-display__time">
+      <span class="timer-display__time--minutes">25</span>
+      <span class="timer-display__time--colon">:</span>
+      <span class="timer-display__time--seconds">00</span>
+    </div>
+  </div>
+  <div class="timer-display__status">Work</div>
+  <div class="timer-display__progress">
+    <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+  </div>
+  <div class="session-notes">
+    <!-- Form Field to add notes
+    <mat-form-field formControl="test" >
+      <textarea matInput placeholder="Notes"></textarea>
+    </mat-form-field>
+    -->
+  </div>
+  <div class="timer-controls">
+    <button mat-raised-button class="btn btn-primary">Start</button>
+    <button mat-raised-button class="btn btn-primary">Pause</button>
+    <button mat-raised-button class="btn btn-primary" color="warn">
+      Restart
+    </button>
+  </div>
+  <div class="pomodoro-log">
+    <h3>Log</h3>
+
+    <mat-table [dataSource]="this.dataSource">
+      <ng-container matColumnDef="date">
+        <mat-header-cell *matHeaderCellDef> Date </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{ element.date }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="duration">
+        <mat-header-cell *matHeaderCellDef> Duration </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{ element.duration }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="type">
+        <mat-header-cell *matHeaderCellDef> Type </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{ element.type }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="notes">
+        <mat-header-cell *matHeaderCellDef> Notes </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{ element.notes }} </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+    </mat-table>
+    <button mat-raised-button class="btn btn-primary" color="warn">
+      Clear
+    </button>
+  </div>
+</div>
+
+<markdown clipboard lineNumbers [src]="details"></markdown>
+<h3>Component:</h3>
+<markdown clipboard lineNumbers [src]="component"></markdown>
+<h3>HTML Template:</h3>
+<markdown clipboard lineNumbers [src]="template"></markdown>
+<h3>Styling:</h3>
+<markdown clipboard lineNumbers [src]="styles"></markdown>

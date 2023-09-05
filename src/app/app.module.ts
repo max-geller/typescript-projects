@@ -7,6 +7,7 @@ import { RouterModule } from "@angular/router";
 import { AppRoutingModule } from "./app.routes";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { MaterialModule } from "./shared/material/material.module";
+import { FormsModule } from "@angular/forms";
 
 // Import ngx-markdown and PrismJS Libraries:
 import { MarkdownModule } from "ngx-markdown";
@@ -29,6 +30,7 @@ import { ImageGalleryComponent } from "./projects/image-gallery/image-gallery.co
 import { WeatherWidgetComponent } from "./projects/weather-widget/weather-widget.component";
 import { HttpClientModule } from "@angular/common/http";
 import { NotFoundComponent } from "./projects/not-found/not-found.component";
+import { PomodoroComponent } from './projects/pomodoro/pomodoro.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { NotFoundComponent } from "./projects/not-found/not-found.component";
     WeatherWidgetComponent,
     SidenavComponent,
     NotFoundComponent,
+    PomodoroComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -56,6 +60,7 @@ import { NotFoundComponent } from "./projects/not-found/not-found.component";
       loader: HttpClientModule,
     }),
     FontAwesomeModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
