@@ -6,6 +6,7 @@ A working demo has been hosted using Vercel, which can be found [here](https://t
 
 ![Preview](https://maxgeller.s3.us-west-1.amazonaws.com/analog-clock.png)
 
+
 ## Dev Log
 
 |  #  |            Project Name                 |      Date      |
@@ -17,6 +18,7 @@ A working demo has been hosted using Vercel, which can be found [here](https://t
 ## Overview
 
 This repository contains a collection of projects that I have built using TypeScript. Each project is built using the latest version of TypeScript and is compiled to JavaScript using the TypeScript compiler. The projects are showcased in a basic Express server that is built using Node.js.
+
 
 This project uses ngx-markdown to render the project markdown files in the browser. You can learn more about ngx-markdown and Prismjs [here](https://jfcere.github.io/ngx-markdown/get-started).
 
